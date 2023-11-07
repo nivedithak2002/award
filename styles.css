@@ -1,0 +1,139 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img1.jpg");
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    font-size: 24px;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.about-content{
+    position: relative;
+    left: 200px;
+    margin-top:300px;
+
+}
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
+.zoom-out-paragraph {
+    animation: zoomOut 2s infinite alternate;
+}
+
+
+
+
+
+
+#about, #awards, #contact {
+    text-align: center;
+}
+
+.award-category {
+    max-width: 960px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+
+}
+.award-category img{
+    border-radius: 50%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: inline;
+    }
+    
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+    
+    .menu.active li {
+        padding: 10px;
+    }
+}
